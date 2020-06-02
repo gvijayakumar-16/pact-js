@@ -31,6 +31,7 @@ const importData = () => {
 
 // Get all available animals
 server.get("/animals/available", (req, res) => {
+  res.setHeader('set-cookie', 'oauth2_authentication_csrf=M*trimmed_for_readability*g==; Path=/; Expires=Thu, 02 Jul 2020 03:45:44 GMT; Max-Age=2592000; HttpOnly');
   res.redirect(302, "http://foo.com")
 })
 
